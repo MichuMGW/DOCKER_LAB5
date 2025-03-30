@@ -2,18 +2,19 @@
 
 # 1. Budowanie obrazu
 `docker build -f Dockerfile --build-arg VERSION=1.0.1 -t webapp .`
-!(img/docker_build)
+![docker build](img/docker_build.png)
 
 # 2. Uruchomienie kontenera
 `docker run -d -p 8080:80 --name app webapp`
-!(img/docker_run.png)
+![docker run](img/docker_run.png)
 
 # 3. Potwierdzenie działania kontenera
 `docker ps`
-!(img/docker_ps.png)
+![docker ps](img/docker_ps.png)
 
 # 4. Potwierdzenie działania serwera
 `curl localhost:8080`
-!(img/docker_curl)
+![curl](img/docker_curl.png)
+![browser](img/browser.png)
 
 
